@@ -47,7 +47,7 @@ This command sets the Description of the Route1 online voice route to "Test Rout
 
 ### -------------------------- Example 2 --------------------------
 ```
-PS C:\> Set-CsOnlineVoiceRoute -Identity Route1 -PstnUsages @{add="Long Distance"}
+PS C:\> Set-CsOnlineVoiceRoute -Identity Route1 -OnlinePstnUsages @{add="Long Distance"}
 ```
 
 The command in this example modifies the online voice route with the identity Route1 to add the online PSTN usage Long Distance to the list of usages for this voice route. Long Distance must be in the list of global online PSTN usages (which can be retrieved with a call to the `Get-CsOnlinePstnUsage` cmdlet).
